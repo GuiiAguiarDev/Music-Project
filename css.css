@@ -273,6 +273,7 @@ img {
 
 .texto-cantores-bandas {
   display: flex;
+  height: 270px;
   background: rgba(26, 25, 25, 0.6);
 }
 
@@ -284,6 +285,7 @@ img {
   padding: 0 10px;
   line-height: 1.5;
   font-family: "Young Serif", serif;
+  overflow-y: auto;
 }
 
 footer {
