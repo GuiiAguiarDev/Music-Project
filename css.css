@@ -1,0 +1,404 @@
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+img,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-image: url(imagens/background.jpg);
+  background-size: cover;
+  background-position-y: 20%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.nav-nav {
+  display: flex;
+  color: black;
+  background: rgba(26, 25, 25, 0.6);
+}
+
+.nav-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-nav li {
+  padding: 10px;
+  list-style: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container-conteudo-inicio {
+  max-width: 1400px;
+  height: 550px;
+  padding: 0 20px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infolaterais {
+  display: flex;
+  transform: rotate(-10deg);
+  width: 350px;
+  height: 250px;
+  background-size: cover;
+}
+
+.infoCentral {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 450px;
+}
+
+.infoCentral p {
+  font-size: 80px;
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  transform: rotate(-35deg);
+  background: rgba(26, 25, 25, 0.6);
+}
+
+.container-conteudo {
+  max-width: 1400px;
+
+  margin: 0 auto;
+  background: rgba(26, 25, 25, 0.6);
+}
+
+.titulo {
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.texto {
+  max-width: 1200px;
+  color: white;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  text-wrap: wrap;
+}
+
+.container-opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.segurando-botoes {
+  position: relative;
+}
+
+.segurando-botoes button {
+  width: 400px;
+  background: #302f2f;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.segurando-botoes button:hover {
+  background: #000000;
+}
+
+.segurando-botoes button:first-child {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  transform: rotate(-5deg);
+}
+
+.segurando-botoes button:last-child {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  transform: rotate(5deg);
+}
+
+.segurando-botoes img {
+  margin-top: 85px;
+  top: -120px;
+  right: 373px;
+  position: absolute;
+  z-index: 1;
+
+  display: inline-block;
+}
+
+.conteudo-musica {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.musicas {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+
+  margin: 10px;
+}
+
+.musicas ul {
+  background: rgba(26, 25, 25, 0.6);
+}
+
+.musicas ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.icon-imagem img {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.conteudo-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.conteudo-galeria img {
+  border: solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#gImg1 {
+  opacity: 0.5;
+  -webkit-transform: rotate(-15deg) scale(1.4);
+  transform: rotate(-15deg) scale(0.8);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#gImg1:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+
+#gImg2 {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#gImg2:hover {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+#gImg3 {
+  -webkit-transform: rotate(15deg) scale(1.4);
+  transform: rotate(15deg) scale(0.8);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+#gImg3:hover {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+
+.conteudo-cantores-bandas {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.imagem-cantores-bandas {
+  flex: 2;
+}
+
+.info-cantores-bandas {
+  flex: 3;
+}
+
+.titulo-cantores-bandas {
+  text-align: center;
+
+  color: white;
+}
+
+.texto-cantores-bandas {
+  display: flex;
+  background: rgba(26, 25, 25, 0.6);
+}
+
+.texto-cantores-bandas p {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  align-items: center;
+  padding: 0 10px;
+  line-height: 1.5;
+  font-family: "Young Serif", serif;
+}
+
+footer {
+  margin: 0 auto;
+  background: rgba(26, 25, 25, 0.6);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 880px) {
+  body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .container-conteudo-inicio {
+    max-width: 1400px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .infolaterais {
+    transform: none;
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .infoCentral {
+    display: none;
+  }
+
+  .container-opcoes {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .segurando-botoes button:first-child,
+  .segurando-botoes button:last-child {
+    writing-mode: none;
+    text-orientation: none;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .segurando-botoes img {
+    display: none;
+  }
+
+  .segurando-botoes button {
+    width: 250px;
+    position: relative;
+    display: block;
+  }
+
+  .conteudo-cantores-bandas {
+    display: block;
+
+    margin-top: 20px;
+  }
+
+  .texto-cantores-bandas {
+    overflow-y: none;
+  }
+
+  .imagem-cantores-bandas {
+    text-align: center;
+  }
+}
+
+@media (min-width: 310px) and (max-width: 480px) {
+  .conteudo-musica {
+    display: block;
+    align-items: center;
+  }
+
+  .musicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .musicas ul li {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .icon-imagem {
+    margin: 0;
+  }
+
+  .icon-imagem img {
+    min-width: 150px;
+  }
+
+  .texto-cantores-bandas {
+    display: flex;
+    background: rgba(26, 25, 25, 0.6);
+    overflow-y: auto;
+  }
+
+
+  .container-conteudo{
+    margin: 0px;
+    padding: 0px;
+   
+  }
+}
